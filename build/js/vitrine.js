@@ -60,6 +60,7 @@ function importTemplate(url){
         type: "GET",
         url: url,
         crossDomain: true,
+        cache: false,
         process_data: false,
         success: function (data) {
             window.parent.postMessage({ message: "import", value: data }, "*");
