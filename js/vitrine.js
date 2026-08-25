@@ -16,6 +16,7 @@ $(document).ready(function(){
     })
     
     $('.badgefilter').click(function(){
+        $('.badgefilter').removeClass('selected');
         if($(this).hasClass('selected')){
             $(this).removeClass('selected')
         }else{
